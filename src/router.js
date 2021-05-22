@@ -4,12 +4,7 @@ import Portfolio from "./pages/Portfolio";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
 import React from "react";
-import {
-  HashRouter as Router,
-  Route,
-  Switch,
-  withRouter,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function AppRouter() {
   return (
@@ -17,9 +12,7 @@ function AppRouter() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Homepage} />
-
         <Route exact path="/portfolio" component={Portfolio} />
-
         <Route>
           <NoMatch />
         </Route>
